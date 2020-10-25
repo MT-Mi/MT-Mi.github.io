@@ -1,1 +1,191 @@
-hello html
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			html, body {
+			    min-width: 1200px;
+			    width: 100%;
+			    height: 100%;
+			    margin: 0px !important;
+			    padding: 0px !important;
+			    color: #333;
+			    font-family: Helvetica Neue,Arial,sans-serif;
+			    font-size: 100%;
+			    outline: none;
+			    overflow-x: hidden;
+			}
+			div, h1, h2, h3, h4, h5, h6,a, dd, b, table, td, th, p, form, input, select, textarea, ul, dl, dt, li, img, i, em, button {
+			    list-style-type: none;
+			    margin: 0;
+			    padding: 0;
+			    border: none;
+			    outline: 0;
+			    font-style: normal;
+			    text-decoration: none;
+			}
+			.header{
+			    clear: both;
+			    width: 1200px;
+			    height: 90px;
+			    text-align: center;
+			    margin: 0 auto;
+			    padding: 20px 0;
+			}
+			.logo-f1{
+				clear: both;
+			    width: 290px;
+			    height: 50px;
+			    float: left;
+			}
+			.back-home {
+			    width: 90px;
+			    height: 40px;
+			    border: 1px solid #F08519;
+			    border-radius: 4px;
+			    text-align: center;
+			    line-height: 40px;
+			    color: #F08519;
+			    font-size: 14px;
+			    float: right;
+			}
+			.loginReg-wrapper {
+			    clear: both;
+			    width: 100%;
+			    max-width: 1920px;
+			    background: url(../img/bg.jpg) no-repeat center top;
+			    border-top: #F7821B solid 3px;
+			    margin: 0 auto;
+			}
+			.login-height {
+			    height: 850px;
+			}
+			.loginReg-wrapper .loginReg-viewbox {
+			    clear: both;
+			    height: auto;
+			}
+			.login-weight {
+			    width: 1080px;
+			}
+			.login-margin {
+			    margin: 115px auto;
+			}
+			img{
+				vertical-align: middle;
+			}
+			.loginReg-wrapper .loginReg-viewbox .loginReg-phone b {
+			    clear: both;
+			    font-size: 40px;
+			    color: #FFFFFF;
+			    font-weight: normal;
+			    margin-bottom:20px ;
+			}
+			.loginReg-wrapper .loginReg-viewbox .loginReg-phone .imgPhone {
+			    float: left;
+			    margin-right: 30px;
+			}
+			.loginReg-wrapper .loginReg-viewbox .loginReg-panel {
+			    width: 400px;
+			    min-height: 600px;
+			    background: #FFFFFF;
+			    box-shadow: 0px 0px 20px 0px rgba(94,94,94,0.50);
+			    border-radius: 2px;
+			    float: right;
+			}
+			.loginReg-wrapper .loginReg-viewbox .loginReg-phone {
+			    clear: both;
+			    width: 550px;
+			    padding: 100px 0 0;
+			    float: left;
+			    color: #fff;
+			}
+			.nav {
+			    padding-left: 0;
+			    margin-bottom: 0;
+			    list-style: none;
+			    height: 60px;
+			}
+			.nav-tabs > li {
+			    float: left;
+			}
+			.nav > li {
+			    position: relative;
+			    display: block;
+			    width: 50%;
+			    height: 60px;
+			    color: coral;
+			    line-height: 60px;
+			    text-align: center;
+			}
+			.nav li a{
+				color: coral;
+			}
+			#profileTabLi{
+				background: #EEEEEE;
+			}
+			iframe{
+				border: 0;
+			}
+			.infphone ul{
+				margin-top: 20px;
+			}
+			.infphone ul li{
+				height: 30px;
+				line-height: 30px;
+			}
+			i{
+				font-size:11px ;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="header">
+			<div class="logo-f1">
+				<img src="../img/logo.gif"/>
+			</div>
+			<a class="back-home">返回首页</a>
+		</div>
+		<div class="loginReg-wrapper login-height">
+			<div class="loginReg-viewbox login-margin login-weight">
+				<div class="loginReg-phone">
+					<img src="../img/phone.png" class="imgPhone"/>
+					<div class="infphone">
+						<b>维也纳酒店微信</b>
+						<ul>
+							<li>特价专区优惠享不停</li>
+							<li>真人客服24小时候命</li>
+							<li>参与互动赢丰厚大奖</li>
+						</ul>
+						<div id="code">
+							<img src="../img/code.png"/>
+							
+						</div>
+						<i>扫描二维码关注维也纳官方微信</i>
+					</div>
+				</div>
+				<div class="loginReg-panel">
+					<ul class="nav nav-tabs" >
+						<li class="active" id="home-TabLi"><a href="per-deng.html" target="jia">个人登录</a></li>
+						<li id="profileTabLi"><a href="com-deng.html" target="jia">公司会员登陆</a></li>
+					</ul>
+					<div>
+						<iframe width="400px" height="540px" scrolling="no" name="jia" src="per-deng.html"></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="../jquery-2.1.0.js" ></script>
+		<script type="text/javascript">
+			$("#home-TabLi").click(function () {
+				$("#profileTabLi").css("background","#EEEEEE");
+				$("#home-TabLi").css("background","white");
+			})
+			$("#profileTabLi").click(function () {
+				$("#home-TabLi").css("background","#EEEEEE");
+				$("#profileTabLi").css("background","white");
+			})
+		</script>
+	</body>
+</html>
+
